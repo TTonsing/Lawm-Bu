@@ -18,7 +18,7 @@ function lawm_bu_table_install() {
 
     $table_name = $wpdb->prefix ."lawm_vual";
     $charset_collate = $wpdb->get_charset_collate();
-	/*if($wpdb ->get_var( "show tables like $table_name'" )!= $table_name ){ */
+	
     $sql = "CREATE TABLE IF NOT EXISTS $table_name (
             id int(9) NOT NULL AUTO_INCREMENT,
             name varchar(25),
@@ -26,11 +26,9 @@ function lawm_bu_table_install() {
 			contact varchar (11),
             PRIMARY KEY (id)
           )$charset_collate;";
-
     require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
     dbDelta($sql);
 	add_option('test_db_version','$test_db_version');
-	/*}*/
 }
 
 // run the install scripts upon plugin activation
