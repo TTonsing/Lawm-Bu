@@ -4,7 +4,7 @@
 * Revision updated on 20191009
 * Author: TTonsing @Mungboi Media
 * Pakage: Lawm Bu
-* File Location: %WordpressRoot%/wp-content/plugins/lawm-bu/
+* File Location: %WordpressRoot%/wp-content/plugins/lawm-bu/lawm_vual.php
 * Description: This page display your contact list.
 * Licence: GPL v2.0 or Later
 */
