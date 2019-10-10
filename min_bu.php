@@ -70,9 +70,6 @@ add_action('admin_menu','lawm_bu_submenu');
 		'lawm_vual_update' //function
 		);
  }
- //add_filter('admin_menu','register_lawm_bu_submenu');
- //register_activation_hook(__FILE__, 'lawm_bu_submenu');
-  // returns the root directory path of particular plugin
 define('LAWM_BU_DIR', plugin_dir_path(__FILE__)); 
 require_once(LAWM_BU_DIR . 'lawm_vual.php');
 require_once(LAWM_BU_DIR . 'lawm_vual_gelhlut.php');
